@@ -1,0 +1,8 @@
+1. python generate_plaintext.py
+2. python generate_key.py
+3. python encrypt_file.py test_plain.bin test_cipher.bin key.json
+4. python decrypt_file.py test_cipher.bin test_decrypted.bin key.json 1024 (1024 is the length of  the plaintext by bytes)
+5. python recover_key_and_decrypt.py test_plain.bin test_cipher.bin 4 0 1 2 3 4 5 6 7 (4-> (n) (block size) / 0 -> (anchor block) / 1234567 -> (sample blocks))
+6. python verify.py test_plain.bin test_cipher.recovered.bin
+
+
